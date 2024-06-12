@@ -1,0 +1,85 @@
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+    font-family: 'Clash Display', sans-serif;
+}
+
+  
+  /* Toggle B */
+  .gradient-effect {
+    width: 317px;
+  height: 230px;
+  background: linear-gradient(to bottom, #FF5555 0%, #FF5555 60%, #FDE598 60%, #FDE598 100%);
+  border-radius: 50%;
+  filter: blur(40px);
+
+}
+.yellowgradient-effect {
+  width: 317px;
+height: 230px;
+background: linear-gradient(to left, #FF5555 0%, #FF5555 60%, #FDE598 60%, #FDE598 100%);
+border-radius: 50%;
+filter: blur(40px);
+
+}
+.redgradient-effect {
+  width: 270px;
+height: 230px;
+background: linear-gradient(to bottom, #FF5555 0%, #FF5555 60%, #FF5555 60%, #FF5555 100%);
+border-radius: 100%;
+filter: blur(50px);
+position: absolute;
+
+}
+
+.gradient h1{
+  
+  font-family: 'Clash Display', sans-serif;
+}
+
+.animate-element {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 1s ease;
+}
+
+.animate-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .gradient-effect {
+    width: 200px;
+    height: 145px;
+    background: linear-gradient(to bottom, #FF5555 0%, #FF5555 60%, #FDE598 60%, #FDE598 100%);
+    border-radius: 50%;
+    filter: blur(25px);
+  }
+  .redgradient-effect {
+    width: 170px;
+  height: 130px;
+  background: linear-gradient(to bottom, #FF5555 0%, #FF5555 60%, #FF5555 60%, #FF5555 100%);
+  border-radius: 100%;
+  filter: blur(50px);
+  position: absolute;
+  
+  }
+  .yellowgradient-effect {
+    width: 170px;
+  height: 130px;
+  background: linear-gradient(to left, #FF5555 0%, #FF5555 60%, #FDE598 60%, #FDE598 100%);
+  border-radius: 100%;
+  filter: blur(50px);
+  position: absolute;
+  
+  }
+  #scale{
+    transform: scale(0.75);
+  }
+ 
+}
